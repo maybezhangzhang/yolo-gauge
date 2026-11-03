@@ -1,0 +1,508 @@
+{
+  "config": {
+    "names": [
+      "base",
+      "maximum",
+      "minimum",
+      "tip"
+    ],
+    "anchors": [
+      [
+        19.6,
+        12.1
+      ],
+      [
+        28.8,
+        15.9
+      ],
+      [
+        24.0,
+        24.6
+      ],
+      [
+        35.5,
+        19.1
+      ],
+      [
+        46.3,
+        26.3
+      ],
+      [
+        50.5,
+        34.7
+      ]
+    ],
+    "training_anchors": [
+      [
+        19.6,
+        12.1
+      ],
+      [
+        28.8,
+        15.9
+      ],
+      [
+        24.0,
+        24.6
+      ],
+      [
+        35.5,
+        19.1
+      ],
+      [
+        46.3,
+        26.3
+      ],
+      [
+        50.5,
+        34.7
+      ]
+    ],
+    "anchor_masks": [
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "input_size": 640,
+    "training_input_size": 640,
+    "board_scale": 640,
+    "input": "deployment uses gray replicated RGB, nearest-floor letterbox114 /255",
+    "training_preprocessing": "upstream RGB with bicubic resizing and augmentation; deployment accuracy must be measured",
+    "board_compatibility": "true 640 deployment with 10x10 HLS tiles and 20x20/40x40 output heads",
+    "source_project": "E:\\yolov4-tiny-pytorch",
+    "source_checkpoint": "E:\\yolov4-tiny-pytorch\\logs_meiter_v1\\best_epoch_weights.pth",
+    "source_sha256": "c93bf5ba855a67e4a7618d0580f637f4db5b57bee0bba562319e7d1a4abebe51",
+    "training_script_sha256": "88503c443b581effab0d098f3de33b4bcd075ccae1e07dab2512f02acd7b5fb9"
+  },
+  "board_input_size": 640,
+  "checkpoint": "E:\\yolov4-tiny-pytorch\\logs_meiter_v1\\ep120-loss0.030-val_loss0.116.pth",
+  "checkpoint_sha256": "7bca25318880a5989a106bcca49fc83694dcc5125f45cc2bb9e6bad0f7c61af7",
+  "exported_at": "2026-11-02T00:07:18",
+  "storage": "little-endian IEEE float32 OIHW weights; board read_params rounds(value*512) into int16",
+  "input_contract": "Three identical grayscale channels required: first conv RGB weights averaged after summation",
+  "files": {
+    "BasicConv1/w.bin": {
+      "shape": [
+        32,
+        3,
+        3,
+        3
+      ],
+      "bytes": 3456,
+      "sha256": "e6c8f71bf89a7bd4623488c8212bbb1609efbb93c2f7c5fcf7dc2531ffebd60a",
+      "max_abs": 13.161751747131348
+    },
+    "BasicConv1/b.bin": {
+      "shape": [
+        32
+      ],
+      "bytes": 128,
+      "sha256": "ef7e9949663c861fea08965bce1ca179a5bb0fcd1ada21f9da80dd1bd948ddba",
+      "max_abs": 11.834552764892578
+    },
+    "BasicConv2/w.bin": {
+      "shape": [
+        64,
+        32,
+        3,
+        3
+      ],
+      "bytes": 73728,
+      "sha256": "4c184118e3f7e7b087f384eeed773398728afdb1a68a8b5ca7f63b6bd1d80df7",
+      "max_abs": 2.679115056991577
+    },
+    "BasicConv2/b.bin": {
+      "shape": [
+        64
+      ],
+      "bytes": 256,
+      "sha256": "c3fda02b0ecc1bc9f7608ea72ceecb7435835ba200436e0e61280a264f718c42",
+      "max_abs": 6.297745704650879
+    },
+    "BasicConv3/w.bin": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "bytes": 9437184,
+      "sha256": "73ebe4b4700eae40b3df6c38f382a5b7dbd600cbbaeb0e25b5c36fe5fc931b04",
+      "max_abs": 0.33637288212776184
+    },
+    "BasicConv3/b.bin": {
+      "shape": [
+        512
+      ],
+      "bytes": 2048,
+      "sha256": "12fe1241703d72e433cd9e7da0cb3fe5f879d48b23761d39242318c7913c8441",
+      "max_abs": 4.558992385864258
+    },
+    "ResBlock1/w1.bin": {
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "bytes": 147456,
+      "sha256": "c547b702ebcf77daccec5bfd78c6dcf3150321a88f27aac9f264c0f3f3f92012",
+      "max_abs": 1.8884512186050415
+    },
+    "ResBlock1/b1.bin": {
+      "shape": [
+        64
+      ],
+      "bytes": 256,
+      "sha256": "917b2dc429af67318ca0e58aa5febab369adecfe8477a95a1b0353da8927d9c5",
+      "max_abs": 11.2830171585083
+    },
+    "ResBlock1/w2.bin": {
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "bytes": 36864,
+      "sha256": "87ff399555fd58ddd446a970c945c1555cd0f42f30a57ecf681e977c85cfde7c",
+      "max_abs": 1.1057170629501343
+    },
+    "ResBlock1/b2.bin": {
+      "shape": [
+        32
+      ],
+      "bytes": 128,
+      "sha256": "7d1cfd307f0fc948983268c1bb98da87a5a16ec1707bd10d7dc874946574733f",
+      "max_abs": 5.03144645690918
+    },
+    "ResBlock1/w3.bin": {
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "bytes": 36864,
+      "sha256": "ef04e0f5db78d7954cd48e3d819d94601f38fc907b09959d5faf8498814f7011",
+      "max_abs": 0.8241229057312012
+    },
+    "ResBlock1/b3.bin": {
+      "shape": [
+        32
+      ],
+      "bytes": 128,
+      "sha256": "d68e959ddb707607fd728de0b1604249c60935b65c68d6a7c0ec460788dc365c",
+      "max_abs": 8.045807838439941
+    },
+    "ResBlock1/w4.bin": {
+      "shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "bytes": 16384,
+      "sha256": "2b169b4158f585933a45a8c7347ba92939ba47b9f6a61295e07682cb324892d3",
+      "max_abs": 1.6188867092132568
+    },
+    "ResBlock1/b4.bin": {
+      "shape": [
+        64
+      ],
+      "bytes": 256,
+      "sha256": "59c600b066111f7d437002c1af5ef21c58a9fc44d9613e4f7eaa5b495e2c99a2",
+      "max_abs": 9.199480056762695
+    },
+    "ResBlock2/w1.bin": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "bytes": 589824,
+      "sha256": "a5d0f0e7581fd6578af89fce944039c09159ab124391dd81f778df8eee8933a8",
+      "max_abs": 0.7042296528816223
+    },
+    "ResBlock2/b1.bin": {
+      "shape": [
+        128
+      ],
+      "bytes": 512,
+      "sha256": "fe7b488ef79b7bbd37225bd862203d1e3ba0a1ac99900373b6ee2aad223d7d49",
+      "max_abs": 5.612954139709473
+    },
+    "ResBlock2/w2.bin": {
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "bytes": 147456,
+      "sha256": "46accf1caf8a582616c4b986b0a45df592ec255d23601f6435831fac026d7031",
+      "max_abs": 0.9989048838615417
+    },
+    "ResBlock2/b2.bin": {
+      "shape": [
+        64
+      ],
+      "bytes": 256,
+      "sha256": "3540bf31d5b9d68bf745debfb1695b52f2be86b28c37c5008d22860a553feeb6",
+      "max_abs": 4.453056335449219
+    },
+    "ResBlock2/w3.bin": {
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "bytes": 147456,
+      "sha256": "da146602b92e2936c855953d1dd23e1fe884261912180bdad08df59369fa3e78",
+      "max_abs": 0.5275272130966187
+    },
+    "ResBlock2/b3.bin": {
+      "shape": [
+        64
+      ],
+      "bytes": 256,
+      "sha256": "26094301702dc00bfbf34d06d70b5e92d1aa9e06af0d4dfd9db4f04cc5399cab",
+      "max_abs": 9.427207946777344
+    },
+    "ResBlock2/w4.bin": {
+      "shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "bytes": 65536,
+      "sha256": "3c087dc572f9dbfc08e008c75df7fcecb95796e6b0602a2c6d1bb3e2cef2bf29",
+      "max_abs": 1.0164974927902222
+    },
+    "ResBlock2/b4.bin": {
+      "shape": [
+        128
+      ],
+      "bytes": 512,
+      "sha256": "d54b34f9823c7b88bbc55c8e5dd85d2bea6b0cf193fc0ccc54307662218eee94",
+      "max_abs": 6.670182228088379
+    },
+    "ResBlock3/w1.bin": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "bytes": 2359296,
+      "sha256": "5b5e971296dd8dc4fa34f9fe5a00a3bb82815fda58d00bebf77ba6fc0b464d13",
+      "max_abs": 0.5498737096786499
+    },
+    "ResBlock3/b1.bin": {
+      "shape": [
+        256
+      ],
+      "bytes": 1024,
+      "sha256": "d9ca5f3f64048e5e33738d59eb7661a2723a65547968017540bc7fe385311046",
+      "max_abs": 6.343387603759766
+    },
+    "ResBlock3/w2.bin": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "bytes": 589824,
+      "sha256": "c63aefd75e05bbf63e5c607ceb77338ba90c4b20a177ad8cbc248b04884162b3",
+      "max_abs": 0.8124769330024719
+    },
+    "ResBlock3/b2.bin": {
+      "shape": [
+        128
+      ],
+      "bytes": 512,
+      "sha256": "c94ae076c7bea1ac8f3cb34517f282a3f0e947b13b4f00153ad6d3a25dcec78a",
+      "max_abs": 6.258479118347168
+    },
+    "ResBlock3/w3.bin": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "bytes": 589824,
+      "sha256": "59d7331f6ef5304d5bbe683d69dec0506ad70dace9c7e8890282f163e4a7fbbe",
+      "max_abs": 0.4871416687965393
+    },
+    "ResBlock3/b3.bin": {
+      "shape": [
+        128
+      ],
+      "bytes": 512,
+      "sha256": "5fa2fda98d6d3793e17488b304e752381467c7722eec0f93aecb43bb094a3b00",
+      "max_abs": 4.861382484436035
+    },
+    "ResBlock3/w4.bin": {
+      "shape": [
+        256,
+        256,
+        1,
+        1
+      ],
+      "bytes": 262144,
+      "sha256": "3b67b45eb4dcb6424c3ee45581310bd4d492047fd9d6acd59f8fa1739bcf81e6",
+      "max_abs": 1.1583974361419678
+    },
+    "ResBlock3/b4.bin": {
+      "shape": [
+        256
+      ],
+      "bytes": 1024,
+      "sha256": "8dcb4cbb8053732c9d384350b3f9ddf934288f8dd6f44af8dfcc234b14c31d5e",
+      "max_abs": 5.909868240356445
+    },
+    "conv_forP5/w.bin": {
+      "shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "bytes": 524288,
+      "sha256": "1da26481cc9b7ccf60a47da91c4dba861c7beb8ff75c6c89d0ae5077a9e55fb8",
+      "max_abs": 1.0527307987213135
+    },
+    "conv_forP5/b.bin": {
+      "shape": [
+        256
+      ],
+      "bytes": 1024,
+      "sha256": "c837f26cec2e5888ba508788412c85b18dafdfcab8274317afea854c88456d5c",
+      "max_abs": 4.131930351257324
+    },
+    "upsample/w.bin": {
+      "shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "bytes": 131072,
+      "sha256": "d857e181dcf4c9fa85bfa38f3da4d83f8f07ca236195998bee87df25caa27803",
+      "max_abs": 1.169931411743164
+    },
+    "upsample/b.bin": {
+      "shape": [
+        128
+      ],
+      "bytes": 512,
+      "sha256": "2d645fa98c49755f112a3f9ff5254d7cc50a22a7e9f7271ace2f3065f84b42d3",
+      "max_abs": 3.561692476272583
+    },
+    "yolo_headP4/w1.bin": {
+      "shape": [
+        256,
+        384,
+        3,
+        3
+      ],
+      "bytes": 3538944,
+      "sha256": "ef859a128ddb16e6fbc4de60fb129c29ccbe1074b6d1d7f17ff69cce670988d1",
+      "max_abs": 0.36636391282081604
+    },
+    "yolo_headP4/b1.bin": {
+      "shape": [
+        256
+      ],
+      "bytes": 1024,
+      "sha256": "02ba11dad51d5bf08eec3c51badb72abcbc37ec81eaaf73ee7612b9cc970aebd",
+      "max_abs": 3.8728582859039307
+    },
+    "yolo_headP4/w2.bin": {
+      "shape": [
+        27,
+        256,
+        1,
+        1
+      ],
+      "bytes": 27648,
+      "sha256": "2e952d5f013b0401070b679b4e044e87f02b3cd082697025711cbae94ff10fd0",
+      "max_abs": 0.5600573420524597
+    },
+    "yolo_headP4/b2.bin": {
+      "shape": [
+        27
+      ],
+      "bytes": 108,
+      "sha256": "8e315e8e0bf99a4bcae846bc1028a5dd8e062897c1a27da21ce30192836c1195",
+      "max_abs": 0.10430929809808731
+    },
+    "yolo_headP5/w1.bin": {
+      "shape": [
+        512,
+        256,
+        3,
+        3
+      ],
+      "bytes": 4718592,
+      "sha256": "c2c622bc5b18f74d7dc45914a3222c75d7a6c95ca72df55c2ae397e2ee08b60b",
+      "max_abs": 0.8176026344299316
+    },
+    "yolo_headP5/b1.bin": {
+      "shape": [
+        512
+      ],
+      "bytes": 2048,
+      "sha256": "03e48cdd4d54c976fb6ce6043c4e9eb60ea199c4b6de24f40894ab28775f8bfd",
+      "max_abs": 5.659425735473633
+    },
+    "yolo_headP5/w2.bin": {
+      "shape": [
+        27,
+        512,
+        1,
+        1
+      ],
+      "bytes": 55296,
+      "sha256": "965c44744e3e44a64ab8bc558cd861d43819f38ae1ce459d290ed473b4f89447",
+      "max_abs": 0.5269784927368164
+    },
+    "yolo_headP5/b2.bin": {
+      "shape": [
+        27
+      ],
+      "bytes": 108,
+      "sha256": "2fcc61dd17dfa41b82f918fc061216be410bb81a6cace27215770ffb3890389d",
+      "max_abs": 0.07568968832492828
+    }
+  },
+  "float_fusion_max_abs_error_per_head": [
+    4.315376281738281e-05,
+    7.784366607666016e-05
+  ],
+  "fusion_check_input": "E:\\my_entry\\gauge_training\\deployment\\meiter640_true_sd\\test1.bmp via deck letterbox (gray, pad114)",
+  "output_shapes": [
+    [
+      27,
+      20,
+      20
+    ],
+    [
+      27,
+      40,
+      40
+    ]
+  ]
+}

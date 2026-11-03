@@ -1,0 +1,84 @@
+{
+  "names": [
+    "base",
+    "maximum",
+    "minimum",
+    "tip"
+  ],
+  "anchors": [
+    [
+      19.6,
+      12.1
+    ],
+    [
+      28.8,
+      15.9
+    ],
+    [
+      24.0,
+      24.6
+    ],
+    [
+      35.5,
+      19.1
+    ],
+    [
+      46.3,
+      26.3
+    ],
+    [
+      50.5,
+      34.7
+    ]
+  ],
+  "training_anchors": [
+    [
+      19.6,
+      12.1
+    ],
+    [
+      28.8,
+      15.9
+    ],
+    [
+      24.0,
+      24.6
+    ],
+    [
+      35.5,
+      19.1
+    ],
+    [
+      46.3,
+      26.3
+    ],
+    [
+      50.5,
+      34.7
+    ]
+  ],
+  "anchor_masks": [
+    [
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "input_size": 640,
+  "training_input_size": 640,
+  "board_scale": 640,
+  "input": "deployment uses gray replicated RGB, nearest-floor letterbox114 /255",
+  "training_preprocessing": "upstream RGB with bicubic resizing and augmentation; deployment accuracy must be measured",
+  "board_compatibility": "true 640 deployment with 10x10 HLS tiles and 20x20/40x40 output heads",
+  "source_project": "E:\\yolov4-tiny-pytorch",
+  "source_checkpoint": "E:\\yolov4-tiny-pytorch\\logs_meiter_v1\\ep120-loss0.030-val_loss0.116.pth",
+  "source_sha256": "7bca25318880a5989a106bcca49fc83694dcc5125f45cc2bb9e6bad0f7c61af7",
+  "training_script_sha256": "88503c443b581effab0d098f3de33b4bcd075ccae1e07dab2512f02acd7b5fb9",
+  "weights_exported_at": "2026-11-02T00:07:18",
+  "weights_file_count": 43
+}

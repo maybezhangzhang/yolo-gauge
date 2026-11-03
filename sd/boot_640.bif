@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+  [bootloader]fsbl.elf
+  system_wrapper_640.bit
+  gauge_hdmi_true640.elf
+}
