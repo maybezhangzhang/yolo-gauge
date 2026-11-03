@@ -1,0 +1,15 @@
+# 文本文件统一 LF，二进制类型显式声明
+* text=auto eol=lf
+
+*.bin    binary
+*.bit    binary
+*.elf    binary
+*.bmp    binary
+*.png    binary
+*.jpg    binary
+*.pdf    binary
+*.docx   binary
+*.xsa    binary
+*.wdb    binary
+*.dcp    binary
+*.hex    binary
